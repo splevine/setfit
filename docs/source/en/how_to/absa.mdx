@@ -82,6 +82,9 @@ If you wish, you can specify separate training arguments for the aspect model as
 </Tip>
 
 ```py
+from setfit import AbsaTrainer, TrainingArguments
+from transformers import EarlyStoppingCallback
+
 args = TrainingArguments(
     output_dir="models",
     num_epochs=5,
