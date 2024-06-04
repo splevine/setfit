@@ -67,6 +67,8 @@ Two datasets that already match this format are these datasets of reviews from t
 * [tomaarsen/setfit-absa-semeval-laptops](https://huggingface.co/datasets/tomaarsen/setfit-absa-semeval-laptops)
 
 ```py
+from datasets import load_dataset
+
 # The training/eval dataset must have `text`, `span`, `label`, and `ordinal` columns
 dataset = load_dataset("tomaarsen/setfit-absa-semeval-restaurants", split="train")
 train_dataset = dataset.select(range(128))
